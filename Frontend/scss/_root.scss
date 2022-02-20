@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    a{
+        text-decoration: none;
+        color:$dark;
+    }
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+    width: 100%; 
+    color:$textdark;
+    @include regular-font;
+}
+
+.container{
+    @include lg {
+        @include paddingsection(20px);
+    }
+
+    @include xxl {
+        @include paddingsection(200px);
+    }
+}

@@ -1,0 +1,46 @@
+@mixin header-font($h-size: 1em) {
+    font-size: $h-size;
+    font-weight: 400;
+    font-family: $font-header;
+}
+
+@mixin regular-font($f-size: 18px) {
+    font-size: $f-size;
+    font-family: $font-regular;
+}
+
+@mixin paddingsection($padding: 215px){
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-gradient{
+    background: linear-gradient(90deg, rgba(242,55,121,1) 0%, rgba(255,104,3,1) 50%, rgba(255,166,46,1) 100%);
+}
+
+@mixin button($width:100px,$height:40px){
+    width: $width;
+    height: $height;
+    font-family: $font-regular;
+    cursor: pointer;
+    background:transparent;
+    color:$dark;
+    border:1px solid $orange;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: background 1s;
+    @include center-content;
+}
+
+@mixin buttonhover{
+    background: $orange;
+    color:$dark;
+    border:2px solid $orange;
+}

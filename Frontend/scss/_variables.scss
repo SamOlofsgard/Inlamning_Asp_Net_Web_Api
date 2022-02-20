@@ -1,0 +1,24 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+$font-header: 'Poppins', sans-serif;
+$font-regular: 'Roboto', sans-serif;
+ 
+// Colors
+$dark: #252525; //header color
+$textdark: #57647C;//regular text
+$light: #ffffff;
+$grayborder: #e4e3e3; 
+$placeholder: #414149;//Placeholder color
+$pink: #F23779;
+$orange: #FF6803; 
+$lightorange: #FFA62E; //button fill radiant red-orange-lightorange
+
+// Breakpoints
+$breakpoint-md: 768px;
+$breakpoint-md-max-width: 720px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-max-width: 960px;
+$breakpoint-xl: 1200px;
+$breakpoint-xl-max-width: 1140px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxl-max-width: 1320px;

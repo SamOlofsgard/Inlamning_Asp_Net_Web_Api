@@ -1,0 +1,86 @@
+#navbar-top{ 
+    position:sticky;
+    z-index: 5;
+    top:0;
+    left:0;
+    background-color:#F8F9FE;
+ 
+    .navbar{
+        height:100px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        position: relative;
+        z-index: 3;
+        
+        ul {
+            transition:top 1s ease-in-out; 
+            position:absolute;
+            z-index: -1; 
+            width:100%;
+            padding-left:0;
+            top:-600px;
+            background-color: #F8F9FE;
+                li {
+                cursor:pointer;
+                height:40px;
+                display:flex;
+                justify-content: center;
+                font-size: 24px;
+                color:$light;
+                text-align:center;
+                margin:40px 0;
+                line-height:50px;
+                transition:background 2s;
+                transition:color 1s;
+            }
+
+            .admin {
+                font-size: 24px;
+                align-self: flex-start;                
+                }           
+            
+        }
+        
+    }
+}
+
+@include xl {
+   #navbar-top{
+       border-bottom:1px solid  $grayborder;
+        .navbar {
+            height:120px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            
+            ul{
+                background:#F8F9FE !important;
+                height: 100px;
+                position:unset;
+                z-index:unset; 
+                padding-left:unset;
+                display:flex;
+                justify-content: right;
+                align-items:center;
+                background:transparent ;
+
+                li{
+                    
+                    font-size: 17px;
+                    display:flex;
+                    align-items: center;
+                    line-height:0;
+                    color:$dark;
+                    margin:unset;
+                    margin-right:50px;
+                    background-color:#F8F9FE;
+                }  
+                li:last-child{
+                    margin-right:10px;
+                }                
+            }              
+        }
+    }    
+}

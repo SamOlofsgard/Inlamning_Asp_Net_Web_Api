@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Sam Olofsgård WIN21, Webbutvecklare .Net, EC-utbildning">
+    <title>Produktsida</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <nav id="navbar-top">
+        <nav class="navbar container">    
+            <ul>
+                <li  class="admin" >  <a>Handla Produkter</a></li> 
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="orderProducts.html" class="productslist" id="productslist" >Produkter</a></li>                                                
+                <li><a class="kassa" href="#">Kassa
+                    
+                </a></li>
+                <button hidden="true" id="cart-number">0</button>
+                
+
+            </ul>            
+        </nav> 
+        <div id="cart" hidden="true" class="container ">
+            <div class="card-footer shadow m-3 mt-5 " >
+                <strong>Din beställning</strong>
+                <strong id="orderUser" ></strong>
+                <div class="d-flex flex-row justify-content-between " >
+                    <p>Produkt</p>
+                    <p>Pris</p>
+                </div>
+
+                <div class="row row-cols-1" id="orderRow"></div>
+                <div class="d-flex flex-row justify-content-between " >
+                    <p class="mt-4">Summa:</p>   
+                    <p class="mt-4" id="summa" ></p>
+                </div>
+                <button id="onSubmitOrder" style="width:100px;height:40px;" class="onSubmitOrder mt-4 btn btn-secondary">Beställ</button>
+                
+            </div>       
+        </div>
+    </nav>
+    <div class="container mt-5">        
+        <strong  id="title">Produktlista</strong>    
+        <div id="products" class="row row-cols-1 row-cols-md-4 g-4"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
